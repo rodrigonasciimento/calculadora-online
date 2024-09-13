@@ -1,0 +1,81 @@
+*{
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  margin: 40px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffcb1d;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), 
+                        url('/images/fundo.jpg');
+  width: auto;
+  padding: 10px;
+}
+article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculadora{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #9E968C;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px black;;
+  overflow: hidden;
+}
+#resultado{
+  height: 100px;
+  padding: 20px;
+  text-align: right;
+  color: #fff;
+  font-size: 3rem;
+}
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 2rem;
+  font-weight: lighter;
+  background-color: #232323 ;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+button:active{
+  opacity: 0.8;
+}
+.btn-igual{
+  grid-column: span 2;
+  background-color: #E5B61A;
+}
+.botoes{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+}
+.rdgo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  color: white;
+}
+.cor-dif{
+  background-color: #181818;
+  color: #ffcb1d;
+}

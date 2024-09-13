@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+    <title>Calculadora Online</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+      body {
+           font-family: "DM Sans", sans-serif;
+          }
+    </style>
+      
+  </head>
+  <body>
+    <header>
+      <h1><img src="./images/logo.png" width="60px">Calculadora Online</h1>
+    </header>
+    <article>
+
+      <div class="calculadora">
+        <div id="resultado">0</div>
+         <div class="botoes">
+              <button id="limparTela" class="cor-dif" onclick="limpar()">C</button>
+              <button class="cor-dif" onclick="inserirNumero('(')">(</button>
+              <button class="cor-dif" onclick="inserirNumero(')')">)</button>
+              <button class="cor-dif" onclick="inserirOperador('*')">X</button>
+              
+
+              <button onclick="inserirNumero('7')">7</button>
+              <button onclick="inserirNumero('8')">8</button>
+              <button onclick="inserirNumero('9')">9</button>
+              <button class="cor-dif" onclick="inserirOperador('/')">/</button>
+              
+              <button onclick="inserirNumero('4')">4</button>
+              <button onclick="inserirNumero('5')">5</button>
+              <button onclick="inserirNumero('6')">6</button>
+              <button class="cor-dif" onclick="inserirOperador('+')">+</button>
+
+              <button onclick="inserirNumero('1')">1</button>
+              <button onclick="inserirNumero('2')">2</button>
+              <button onclick="inserirNumero('3')">3</button>
+              <button class="cor-dif" onclick="inserirOperador('-')">-</button>
+
+              <button onclick="inserirNumero('0')">0</button>
+              <button onclick="inserirNumero('.')">.</button>
+              <button class="btn-igual" onclick="calcular()">=</button>
+        </div>
+     </div>
+    </article>
+    <footer>
+      <div class="rdgo">
+        <p style="margin: 0;">@Desenvolvido por </p>
+        <img width="40px" src="images/rdgo.png">
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
